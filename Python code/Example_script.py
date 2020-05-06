@@ -63,18 +63,6 @@ PKD4 = ReadARCA('PKD4.csv')
 PKD5 = ReadARCA('PKD5.csv')
 PKD6 = ReadARCA('PKD6.csv')
 
-Ctrl_List = ReshapeForJoin(Ctrl1,Ctrl2,Ctrl3,Ctrl4,Ctrl5,Ctrl6)
-CDAII_List = ReshapeForJoin(CDAII1,CDAII2,CDAII3,CDAII4,CDAII5,CDAII6,CDAII7,CDAII8,CDAII9)
-GX_List = ReshapeForJoin(GX1, GX2, GX3)
-HS_List = ReshapeForJoin(HS1,HS2,HS3,HS4,HS5,HS6,HS7,HS8,HS9,HS10,HS11,HS12,HS13)
-PiezoHX_List = ReshapeForJoin(PiezoHX1,PiezoHX2,PiezoHX3,PiezoHX4,PiezoHX5,PiezoHX6,PiezoHX7,PiezoHX8,PiezoHX9,PiezoHX10)
-
-Ctrl_neg = JoinARCA(Ctrl_List[0],Ctrl_List[1],Ctrl_List[2],Ctrl_List[3],Ctrl_List[4],Ctrl_List[5])
-CDAII = JoinARCA(CDAII_List[0],CDAII_List[1],CDAII_List[2],CDAII_List[3],CDAII_List[4],CDAII_List[5],CDAII_List[6],CDAII_List[7],CDAII_List[8])
-GX = JoinARCA(GX_List[0],GX_List[1],GX_List[2])
-HS = JoinARCA(HS_List[0],HS_List[1],HS_List[2],HS_List[3],HS_List[4],HS_List[5],HS_List[6],HS_List[7],HS_List[8],HS_List[9],HS_List[10],HS_List[11],HS_List[12])
-PiezoHX = JoinARCA(PiezoHX_List[0],PiezoHX_List[1],PiezoHX_List[2],PiezoHX_List[3],PiezoHX_List[4],PiezoHX_List[5],PiezoHX_List[6],PiezoHX_List[7],PiezoHX_List[8],PiezoHX_List[9])
-
 CtrlTrain=ARCADataAugmenter(Ctrl1)
 CDAIITrain=ARCADataAugmenter(CDAII1)
 HSTrain=ARCADataAugmenter(HS1)
